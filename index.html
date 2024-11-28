@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+
+  <body class="font-Roboto text-darkSlateGrey">
+    <main class="sm:bg-charcoalGrey min-h-svh sm:flex">
+      <form
+        id="form"
+        action=""
+        novalidate
+        class="m-auto flex min-h-svh w-full max-w-[400px] flex-col sm:m-auto sm:min-h-0 sm:max-w-[800px] sm:flex-row-reverse sm:rounded-2xl sm:bg-white"
+      >
+        <div class="sm:self-center">
+          <img
+            class="block max-h-[300px] w-full sm:hidden"
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt="mobile illustration"
+          />
+          <img
+            class="sm hidden sm:block sm:max-w-full sm:p-4"
+            src="assets/images/illustration-sign-up-desktop.svg"
+            alt="desktop illustration"
+          />
+        </div>
+        <div class="px-4 py-8 sm:self-center sm:px-12 sm:py-8">
+          <h1 class="mb-5 text-4xl font-bold sm:text-5xl">Stay updated!</h1>
+          <p class="mb-5">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="mb-5 space-y-2">
+            <li
+              class="flex gap-3 before:content-[url(assets/images/icon-list.svg)]"
+            >
+              Product discovery and building what matters
+            </li>
+            <li
+              class="flex gap-3 before:content-[url(assets/images/icon-list.svg)]"
+            >
+              Measuring to ensure updates are a success
+            </li>
+            <li
+              class="flex gap-3 before:content-[url(assets/images/icon-list.svg)]"
+            >
+              And much more!
+            </li>
+          </ul>
+          <div class="mb-2 flex justify-between text-xs font-bold">
+            <p>Email address</p>
+            <p id="error-msg" class="text-tomato"></p>
+          </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+            class="placeholder:text-darkSlateGrey/70 mb-5 block w-full rounded-md border-2 border-solid px-4 py-4 focus:outline-none sm:px-6"
+          />
+          <button
+            type="submit"
+            class="bg-darkSlateGrey w-full rounded-md px-4 py-4 font-bold text-white hover:bg-[#1b1e31] sm:px-8"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+      </form>
+
+      <div
+        id="success-msg"
+        class="m-auto hidden h-svh w-full max-w-[400px] flex-col px-4 py-8 sm:m-auto sm:h-auto sm:max-w-[500px] sm:gap-8 sm:rounded-2xl sm:bg-white sm:px-12 sm:py-12"
+      >
+        <img
+          src="assets/images/icon-success.svg"
+          alt="success"
+          class="mb-8 mt-16 size-[64px] sm:m-0"
+        />
+        <h2 class="mb-4 text-4xl font-bold sm:m-0 sm:text-5xl">
+          Thanks for subscribing!
+        </h2>
+        <p>
+          A confirmation email has been sent to
+          <span class="font-bold">ash@loremcompany.com</span>. Please open it
+          and click the button inside to confirm your subscription.
+        </p>
+        <button
+          id="dismiss-btn"
+          type="button"
+          class="bg-darkSlateGrey mt-auto w-full rounded-md px-4 py-4 font-bold text-white hover:bg-[#1b1e31] sm:m-0 sm:px-8"
+        >
+          Dismiss message
+        </button>
+      </div>
+    </main>
+
+    <script type="module" src="index.js"></script>
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+  </body>
+</html>
