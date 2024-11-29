@@ -22,26 +22,26 @@
   </head>
 
   <body class="font-Roboto text-darkSlateGrey">
-    <main class="sm:bg-charcoalGrey min-h-svh sm:flex">
+    <main class="min-h-svh sm:flex sm:bg-charcoalGrey">
       <form
         id="form"
         action=""
         novalidate
-        class="m-auto flex min-h-svh w-full max-w-[400px] flex-col sm:m-auto sm:min-h-0 sm:max-w-[800px] sm:flex-row-reverse sm:rounded-2xl sm:bg-white"
+        class="m-auto flex h-svh w-full max-w-[400px] flex-col overflow-hidden shadow-2xl sm:m-auto sm:h-auto sm:w-[90%] sm:max-w-[800px] sm:flex-row-reverse sm:rounded-2xl sm:bg-white"
       >
-        <div class="sm:self-center">
+        <div>
           <img
-            class="block max-h-[300px] w-full sm:hidden"
+            class="h-imgMobile block w-full rounded-b-[10px] object-cover object-top sm:hidden"
             src="assets/images/illustration-sign-up-mobile.svg"
             alt="mobile illustration"
           />
           <img
-            class="sm hidden sm:block sm:max-w-full sm:p-4"
+            class="hidden sm:block sm:h-full sm:w-full sm:rounded-[10px] sm:object-cover sm:p-4"
             src="assets/images/illustration-sign-up-desktop.svg"
             alt="desktop illustration"
           />
         </div>
-        <div class="px-4 py-8 sm:self-center sm:px-12 sm:py-8">
+        <div class="px-4 py-6 sm:self-center sm:px-12 sm:py-8">
           <h1 class="mb-5 text-4xl font-bold sm:text-5xl">Stay updated!</h1>
           <p class="mb-5">
             Join 60,000+ product managers receiving monthly updates on:
@@ -72,11 +72,11 @@
             name="email"
             id="email"
             placeholder="email@company.com"
-            class="placeholder:text-darkSlateGrey/70 mb-5 block w-full rounded-md border-2 border-solid px-4 py-4 focus:outline-none sm:px-6"
+            class="mb-5 block w-full rounded-md border-2 border-solid px-4 py-4 placeholder:text-darkSlateGrey/70 focus:outline-none sm:px-6"
           />
           <button
             type="submit"
-            class="bg-darkSlateGrey w-full rounded-md px-4 py-4 font-bold text-white hover:bg-[#1b1e31] sm:px-8"
+            class="w-full rounded-md bg-darkSlateGrey px-4 py-4 font-bold text-white hover:bg-[#1b1e31] sm:px-8"
           >
             Subscribe to monthly newsletter
           </button>
@@ -85,7 +85,7 @@
 
       <div
         id="success-msg"
-        class="m-auto hidden h-svh w-full max-w-[400px] flex-col px-4 py-8 sm:m-auto sm:h-auto sm:max-w-[500px] sm:gap-8 sm:rounded-2xl sm:bg-white sm:px-12 sm:py-12"
+        class="m-auto hidden h-svh w-full max-w-[400px] flex-col px-4 py-8 shadow-2xl sm:m-auto sm:h-auto sm:max-w-[500px] sm:gap-8 sm:rounded-2xl sm:bg-white sm:px-12 sm:py-12"
       >
         <img
           src="assets/images/icon-success.svg"
@@ -103,7 +103,7 @@
         <button
           id="dismiss-btn"
           type="button"
-          class="bg-darkSlateGrey mt-auto w-full rounded-md px-4 py-4 font-bold text-white hover:bg-[#1b1e31] sm:m-0 sm:px-8"
+          class="mt-auto w-full rounded-md bg-darkSlateGrey px-4 py-4 font-bold text-white hover:bg-[#1b1e31] sm:m-0 sm:px-8"
         >
           Dismiss message
         </button>
